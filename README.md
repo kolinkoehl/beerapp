@@ -16,3 +16,6 @@ App allows you to create/update and delete breweries and beer
 So far you can just name the beer and brewry. They are stored in mongo. 
 
 More to come
+
+
+Beer update: you can now add name, style, ABV, IBU and ratings to beer in API

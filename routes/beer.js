@@ -19,7 +19,11 @@ router.route('/beer')
     .post(function(req, res) {
 
         var beer = new Beer();      // create a new instance of the brewry model
-        beer.name = req.body.name;  // set the breweries name (comes from the request)
+        beer.name = req.body.name;  // set the beer name (comes from the request)
+        beer.style = req.body.style; // set the beer style
+        beer.ABV = req.body.ABV; // set the ABV
+        beer.IBU = req.body.IBU; //set the IBU
+        beer.rating = req.body.rating; // set the rating
 
         // save the brewery and check for errors
         beer.save(function(err) {
