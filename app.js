@@ -16,6 +16,7 @@ var beer = require('./routes/beer');
 
 var app = express();
 
+// testing GIT
 // testing out brewery routes
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
