@@ -7,7 +7,11 @@ var mongoose   = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var BrewrySchema   = new Schema({
-    name: String
+    name: String,
+    street: String,
+    city: String,
+    state: String,
+    zip: Number
 });
 
 module.exports = mongoose.model('Brewery', BrewrySchema);
