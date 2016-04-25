@@ -18,7 +18,7 @@ router.route('/beer')
     // create a bear (accessed at POST http://localhost:3000/brewery)
     .post(function(req, res) {
 
-        var beer = new Beer();      // create a new instance of the brewry model
+        var beer = new Beer();      // create a new instance of the beer model
         beer.name = req.body.name;  // set the beer name (comes from the request)
         beer.style = req.body.style; // set the beer style
         beer.ABV = req.body.ABV; // set the ABV
