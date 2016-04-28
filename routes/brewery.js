@@ -20,10 +20,10 @@ router.route('/brewery')
 
         var brewery = new Brewery();      // create a new instance of the brewry model
         brewery.name = req.body.name;  // set the breweries name (comes from the request)
-        brewery.street = req.body.street; //set the breweries street in a string
-        brewery.city = req.body.city; //set the brewery's city in string
-        brewery.state = req.body.state; //set the brewery's state in string
-        brewery.zip = req.body.zip; //set the brewrey's zip
+        brewery.address.street = req.body.address.street; //set the breweries street in a string
+        brewery.address.city = req.body.address.city; //set the brewery's city in string
+        brewery.address.state = req.body.address.state; //set the brewery's state in string
+        brewery.address.zip = req.body.address.zip; //set the brewrey's zip
         // save the brewery and check for errors
         brewery.save(function(err) {
             if (err)
@@ -63,10 +63,10 @@ router.route('/brewery/:brewery_id')
                 res.send(err);
 
             brewery.name = req.body.name;  // set the breweries name (comes from the request)
-            brewery.street = req.body.street; //set the breweries street in a string
-            brewery.city = req.body.city; //set the brewery's city in string
-            brewery.state = req.body.state; //set the brewery's state in string
-            brewery.zip = req.body.zip; //set the brewrey's zip
+            brewery.address.street = req.body.address.street; //set the breweries street in a string
+            brewery.address.city = req.body.address.ity; //set the brewery's city in string
+            brewery.address.state = req.body.address.state; //set the brewery's state in string
+            brewery.address.zip = req.body.address.zip; //set the brewrey's zip
 
             // save the bear
             brewery.save(function(err) {
