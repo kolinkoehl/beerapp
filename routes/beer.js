@@ -63,7 +63,11 @@ router.route('/beer/:beer_id')
             if (err)
                 res.send(err);
 
-            beer.name = req.body.name;  // update the bears info
+            beer.name = req.body.name;  // set the beer name (comes from the request)
+            beer.style = req.body.style; // set the beer style
+            beer.ABV = req.body.ABV; // set the ABV
+            beer.IBU = req.body.IBU; //set the IBU
+            beer.rating = req.body.rating; // set the rating
 
             // save the bear
             beer.save(function(err) {
