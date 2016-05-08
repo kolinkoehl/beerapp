@@ -26,6 +26,8 @@ router.route('/beer')
         beer.ABV = req.body.ABV; // set the ABV
         beer.IBU = req.body.IBU; //set the IBU
         beer.rating = req.body.rating; // set the rating
+        beer.upvote = req.body.upvote; // # of upvotes
+        beer.downvote = req.body.downvote; //# of downvotes
 
         // save the brewery and check for errors
         beer.save(function(err) {
@@ -72,6 +74,8 @@ router.route('/beer/:beer_id')
             beer.ABV = req.body.ABV; // set the ABV
             beer.IBU = req.body.IBU; //set the IBU
             beer.rating = req.body.rating; // set the rating
+            beer.upvote = req.body.upvote; // # of upvotes
+            beer.downvote = req.body.downvote; //# of downvotes
 
             // save the bear
             beer.save(function(err) {

@@ -12,7 +12,9 @@ var BeerSchema   = new Schema({
     notes: String,
     ABV: Number,
     IBU: Number,
-    rating: Number
+    rating: Number,
+    upvote: Number,
+    downvote: Number
 });
 
 module.exports = mongoose.model('Beer', BeerSchema);
