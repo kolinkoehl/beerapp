@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://kolinkoehl:Chicago890@jello.modulusmongo.net:27017/uxa9wiNy'); // connect to our database
-
+//mongoose.connect('mongodb://kolinkoehl:Chicago890@jello.modulusmongo.net:27017/uxa9wiNy'); // connect to our database
+mongoose.connect('mongodb://localhost/');
 var Beer = require('./models/beerschema');
 var Brewery = require('./models/breweryschema');
 var routes = require('./routes/index');

@@ -5,8 +5,11 @@ var mongoose   = require('mongoose');
 
 var Schema       = mongoose.Schema;
 
-var BeerSchema   = new Schema({
-    name: String,
+var BeerSchema;
+BeerSchema = new Schema({
+    beerMaster: {
+        name: String,
+    },
     brewery: String,
     style: String,
     notes: String,

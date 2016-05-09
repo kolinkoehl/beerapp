@@ -12,7 +12,7 @@ var BrewrySchema   = new Schema({
         street: String,
         city: String,
         state: String,
-        zip: Number
+        zip: Number,
 
     }
 

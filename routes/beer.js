@@ -66,7 +66,7 @@ router.route('/beer/:beer_id')
 
             if (err)
                 res.send(err);
-
+            
             beer.name = req.body.name;  // set the beer name (comes from the request)
             beer.brewery = req.body.brewery; // brewery
             beer.style = req.body.style; // set the beer style
@@ -77,13 +77,13 @@ router.route('/beer/:beer_id')
             beer.upvote = req.body.upvote; // # of upvotes
             beer.downvote = req.body.downvote; //# of downvotes
 
-            // save the bear
+            //save the bear
             beer.save(function(err) {
                 if (err)
                     res.send(err);
 
                 res.json({ message: 'beer updated!' });
-            });
+             });
 
         });
     })
