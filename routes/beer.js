@@ -21,10 +21,13 @@ router.route('/beer')
         var beer = new Beer();      // create a new instance of the beer model
         beer.name = req.body.name;  // set the beer name (comes from the request)
         beer.brewery = req.body.brewery; // brewery
+        beer.availability = req.body.availability; //when is it available?
         beer.style = req.body.style; // set the beer style
         beer.notes = req.body.notes; // set beer notes in paragraph form
         beer.ABV = req.body.ABV; // set the ABV
         beer.IBU = req.body.IBU; //set the IBU
+        beer.SRM = req.body.SRM; // set the SRM
+        beer.OG = req.body.OG; // set the OG
         beer.rating = req.body.rating; // set the rating
         beer.upvote = req.body.upvote; // # of upvotes
         beer.downvote = req.body.downvote; //# of downvotes
@@ -75,6 +78,8 @@ router.route('/beer/:beer_id')
             beer.notes = req.body.notes; // set beer notes in paragraph form
             beer.ABV = req.body.ABV; // set the ABV
             beer.IBU = req.body.IBU; //set the IBU
+            beer.SRM = req.body.SRM; // set the SRM
+            beer.OG = req.body.OG; // set the OG
             beer.rating = req.body.rating; // set the rating
             beer.upvote = req.body.upvote; // # of upvotes
             beer.downvote = req.body.downvote; //# of downvotes

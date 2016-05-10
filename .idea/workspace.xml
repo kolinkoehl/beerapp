@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102afea4-f64c-494c-9221-a95c927fe2c8" name="Default" comment="added unique and required validation to beer and brewery schemas">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
+    <list default="true" id="102afea4-f64c-494c-9221-a95c927fe2c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/beerschema.js" afterPath="$PROJECT_DIR$/models/beerschema.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/breweryschema.js" afterPath="$PROJECT_DIR$/models/breweryschema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/beer.js" afterPath="$PROJECT_DIR$/routes/beer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/brewery.js" afterPath="$PROJECT_DIR$/routes/brewery.js" />
     </list>
     <ignored path="beerapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +48,8 @@
       <file leaf-file-name="breweryschema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/breweryschema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -62,28 +58,28 @@
       <file leaf-file-name="beer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/beer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beerschema.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="beerschema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/beerschema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="357">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,10 +104,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/license.txt" />
-        <option value="$PROJECT_DIR$/models/beerschema.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/breweryschema.js" />
         <option value="$PROJECT_DIR$/routes/brewery.js" />
+        <option value="$PROJECT_DIR$/models/beerschema.js" />
         <option value="$PROJECT_DIR$/routes/beer.js" />
       </list>
     </option>
@@ -124,8 +120,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="55" />
+    <option name="x" value="289" />
+    <option name="y" value="84" />
     <option name="width" value="1305" />
     <option name="height" value="781" />
   </component>
@@ -305,7 +301,7 @@
       <workItem from="1462387331276" duration="5460000" />
       <workItem from="1462716349043" duration="1771000" />
       <workItem from="1462718606592" duration="1515000" />
-      <workItem from="1462905531722" duration="1937000" />
+      <workItem from="1462905531722" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="modulus DB">
       <created>1462670919597</created>
@@ -342,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462674831698</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added unique and required validation to beer and brewery schemas">
+      <created>1462907508422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1462907508422</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33331000" />
+    <option name="totallyTimeSpent" value="34425000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,7 +361,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="55" width="1305" height="781" extended-state="0" />
+    <frame x="289" y="84" width="1305" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2591156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -704,22 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/breweryschema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/brewery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -728,18 +715,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/breweryschema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/beer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/beerschema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="357">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

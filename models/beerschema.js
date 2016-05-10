@@ -13,10 +13,13 @@ BeerSchema = new Schema({
         unique: true
     },
     brewery: String,
+    availability: String,
     style: String,
     notes: String,
     ABV: Number,
     IBU: Number,
+    SRM: Number,
+    OG: Number,
     rating: Number,
     upvote: Number,
     downvote: Number
