@@ -7,7 +7,11 @@ var mongoose   = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var BrewrySchema   = new Schema({
-    name: String,
+    name: {
+        type:String,
+        required:true,
+        unique:true
+    },
     address: {
         street: String,
         city: String,

@@ -7,8 +7,10 @@ var Schema       = mongoose.Schema;
 
 var BeerSchema;
 BeerSchema = new Schema({
-    beerMaster: {
-        name: String,
+    name: {
+        type: String,
+        required: true,
+        unique: true
     },
     brewery: String,
     style: String,

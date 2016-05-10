@@ -28,8 +28,10 @@ router.route('/brewery')
         brewery.save(function(err) {
             if (err)
                 res.send(err);
-
-            res.json({ message: brewery.name + ' created!' });
+            else{
+                res.json({ message: brewery.name + ' created!' });
+            }
+            
         });
 
     })
