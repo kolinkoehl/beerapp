@@ -29,8 +29,7 @@ router.route('/beer')
         beer.SRM = req.body.SRM; // set the SRM
         beer.OG = req.body.OG; // set the OG
         beer.rating = req.body.rating; // set the rating
-        beer.upvote = req.body.upvote; // # of upvotes
-        beer.downvote = req.body.downvote; //# of downvotes
+        beer.vote = req.body.vote; // # of votes + or - 
 
         // save the brewery and check for errors
         beer.save(function (err) {
@@ -66,7 +65,8 @@ router.route('/beer/:beer_id')
 
     .put(function (req, res) {
 
-        // use our bear model to find the bear we want
+        // use our beer model to find the beer we want
+        // http://stackoverflow.com/questions/7267102/how-do-i-update-upsert-a-document-in-mongoose
         Beer.findById(req.params.beer_id, function (err, beer) {
 
             if (err)

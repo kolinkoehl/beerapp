@@ -21,8 +21,7 @@ BeerSchema = new Schema({
     SRM: Number,
     OG: Number,
     rating: Number,
-    upvote: Number,
-    downvote: Number
+    vote: Number
 });
 
 module.exports = mongoose.model('Beer', BeerSchema);
