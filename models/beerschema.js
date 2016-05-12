@@ -18,8 +18,6 @@ BeerSchema = new Schema({
     notes: String,
     ABV: Number,
     IBU: Number,
-    SRM: Number,
-    OG: Number,
     rating: Number,
     vote: Number
 });

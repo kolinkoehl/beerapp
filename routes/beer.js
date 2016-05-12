@@ -26,8 +26,6 @@ router.route('/beer')
         beer.notes = req.body.notes; // set beer notes in paragraph form
         beer.ABV = req.body.ABV; // set the ABV
         beer.IBU = req.body.IBU; //set the IBU
-        beer.SRM = req.body.SRM; // set the SRM
-        beer.OG = req.body.OG; // set the OG
         beer.rating = req.body.rating; // set the rating
         beer.vote = req.body.vote; // # of votes + or - 
 
@@ -78,11 +76,8 @@ router.route('/beer/:beer_id')
             beer.notes = req.body.notes; // set beer notes in paragraph form
             beer.ABV = req.body.ABV; // set the ABV
             beer.IBU = req.body.IBU; //set the IBU
-            beer.SRM = req.body.SRM; // set the SRM
-            beer.OG = req.body.OG; // set the OG
             beer.rating = req.body.rating; // set the rating
-            beer.upvote = req.body.upvote; // # of upvotes
-            beer.downvote = req.body.downvote; //# of downvotes
+            beer.vote = req.body.vote; // # of upvotes
 
             //save the bear
             beer.save(function (err) {
