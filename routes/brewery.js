@@ -24,12 +24,12 @@ router.route('/brewery')
         brewery.address.city = req.body.address.city; //set the brewery's city in string
         brewery.address.state = req.body.address.state; //set the brewery's state in string
         brewery.address.zip = req.body.address.zip; //set the brewrey's zip
-        // save the brewery and check for errors
+        //save the brewery and check for errors
         brewery.save(function(err) {
             if (err)
                 res.send(err);
-            else{
-                res.json({ message: brewery.name + ' created!' });
+            else {
+                res.json({message: brewery.name + ' created!'});
             }
             
         });
