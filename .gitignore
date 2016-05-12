@@ -6,10 +6,13 @@ npm-debug.log*
 
 # Runtime data
 pids
+/.idea/libraries/beerapp_node_modules.xml
 *.pid
 *.seed
 
 # User-specific stuff:
+/.idea
+/.idea/workspace.xml
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries

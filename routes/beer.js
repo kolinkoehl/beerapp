@@ -72,12 +72,13 @@ router.route('/beer/:beer_id')
 
             beer.name = req.body.name;  // set the beer name (comes from the request)
             beer.brewery = req.body.brewery; // brewery
+            beer.availability = req.body.availability; //when is it available?
             beer.style = req.body.style; // set the beer style
             beer.notes = req.body.notes; // set beer notes in paragraph form
             beer.ABV = req.body.ABV; // set the ABV
             beer.IBU = req.body.IBU; //set the IBU
             beer.rating = req.body.rating; // set the rating
-            beer.vote = req.body.vote; // # of upvotes
+            beer.vote = req.body.vote; // # of votes + or -
 
             //save the bear
             beer.save(function (err) {
